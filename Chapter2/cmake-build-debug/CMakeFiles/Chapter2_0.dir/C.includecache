@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
+
+/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.c
+SequenceList.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
+DataElement.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
+stdio.h
+-
+stdlib.h
+-
+
+/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
+stdio.h
+-
+stdlib.h
+-
+DataElement.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
+
+/cygdrive/d/Studies/C/DataStructure/Chapter2/main.c
+stdio.h
+-
+stdlib.h
+-
+DataElement.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
+SequenceList.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
+
