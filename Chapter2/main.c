@@ -5,25 +5,23 @@
 
 //测试数据
 ElementType dataArray[] = {
-        {1,"Nayuta"},
-        {2,"Let it go"},
-        {3,"Landscape"},
-        {4,"Wings you are the hero"}
+        {1, "Nayuta"},
+        {2, "Let it go"},
+        {3, "Landscape"},
+        {4, "Wings you are the hero"}
 };
 
 void TestSequenceList();//测试
 
-int main()
-{
+int main() {
     TestSequenceList();
     return 0;
 }
 
-void TestSequenceList()
-{
+void TestSequenceList() {
     //测试初始化
     SeqList seqList;    //要操作的顺序表
-    ElementType * delElement;
+    ElementType *delElement;
     InitList(&seqList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));// 4
     PrintList(&seqList);
 

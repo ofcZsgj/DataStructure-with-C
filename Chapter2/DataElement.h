@@ -21,15 +21,15 @@
 /*
  *datas{{1,""},{2,""},{3,""}};
  */
-typedef struct{
+typedef struct {
     int id;
-    char * name;
-}ElementType;
+    char *name;
+} ElementType;
 
 //2.定义顺序表结构
-typedef struct{
+typedef struct {
     ElementType datas[MAX_SIZE];//顺序表中的数据元素集合
     int length;                 //当前顺序表中元素个数
-}SeqList;
+} SeqList;
 
 #endif //CHAPTER2_0_DATAELEMENT_H
