@@ -1,0 +1,17 @@
+[33mcommit 5b91d0722b37de7fdae9b13637f6167793565810[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mdev[m[33m)[m
+Author: Botao Wei <tcuZsgj@gmail.com>
+Date:   Thu Jan 31 16:13:39 2019 +0800
+
+    clear the sequencelist code
+
+[33mcommit a96884a51a5a13206448e1d0d4495af3d2c9f9ff[m
+Author: Botao Wei <tcuZsgj@gmail.com>
+Date:   Wed Jan 30 20:40:29 2019 +0800
+
+    note for Datastructure Chapter 1
+
+[33mcommit cc01b0602160d5c0de3141ba049bcab2d216f512[m
+Author: Botao Wei <tcuZsgj@gmail.com>
+Date:   Wed Jan 30 20:22:54 2019 +0800
+
+    first commit, sequencelist operation
