@@ -9,8 +9,6 @@
 #ifndef CHAPTER2_0_SEQUENCELIST_H
 #define CHAPTER2_0_SEQUENCELIST_H
 
-#define FALSE 0
-#define TRUE 1
 
 /********************************************************************
  *  Project:数据结构第二章

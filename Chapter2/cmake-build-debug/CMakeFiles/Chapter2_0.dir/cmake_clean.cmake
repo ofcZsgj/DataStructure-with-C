@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Chapter2_0.dir/main.c.o"
   "CMakeFiles/Chapter2_0.dir/SequenceList.c.o"
+  "CMakeFiles/Chapter2_0.dir/LinkList.c.o"
   "Chapter2_0.pdb"
   "Chapter2_0.exe"
   "libChapter2_0.dll.a"

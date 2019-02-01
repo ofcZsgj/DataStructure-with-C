@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include"DataElement.h"
 #include "SequenceList.h"
+#include "LinkList.h"
 
 //测试数据
 ElementType dataArray[] = {
@@ -11,30 +13,49 @@ ElementType dataArray[] = {
         {4, "Wings you are the hero"}
 };
 
-void TestSequenceList();//测试
+void TestSequenceList();//测试顺序表
+
+void TestLinkList();//测试链表
 
 int main() {
     TestSequenceList();
+    TestLinkList();
     return 0;
 }
 
 void TestSequenceList() {
-    //测试初始化
+    //测试顺序表初始化
     SeqList seqList;    //要操作的顺序表
     ElementType *delElement;
     InitList(&seqList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));// 4
     PrintList(&seqList);
 
-    //测试插入
+    //测试顺序表插入
     InsertElement(&seqList, 4, dataArray[3]);
-    printf("插入后\n");
+    printf("顺序表插入后\n");
     PrintList(&seqList);
 
     //测试删除
     delElement = DeleteElement(&seqList, 1);
-    printf("删除后\n");
+    printf("顺序表删除后\n");
     PrintList(&seqList);
-    printf("删除的元素为\n");
+    printf("顺序表删除的元素为\n");
     printf("%d\t%s\n", delElement->id, delElement->name);
     free(delElement);//使用完毕记得释放内存(专业做法!)
+}
+
+void TestLinkList() {
+    //测试链表初始化
+    LinkList linkList;
+    linkList.length = 0;//容易忽略
+    InitLinkList(&linkList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));
+    PrintLinkList(&linkList);
+    //测试链表插入
+    ElementType newElement;
+    newElement.id = 117;
+    newElement.name = (char *) malloc(12);
+    stpcpy(newElement.name, "测试链表插入");
+    InsertLinkList(&linkList, 3, newElement);
+    printf("链表插入元素后\n");
+    PrintLinkList(&linkList);
 }

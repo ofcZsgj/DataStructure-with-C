@@ -15,6 +15,8 @@
  ********************************************************************/
 
 #define MAX_SIZE 255
+#define FALSE 0
+#define TRUE 1
 
 //1.定义数据元素
 //typedef int ElementType;

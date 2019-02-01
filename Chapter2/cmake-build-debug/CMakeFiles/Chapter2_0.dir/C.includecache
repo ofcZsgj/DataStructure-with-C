@@ -8,15 +8,17 @@
 
 /cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
 
-/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.c
-SequenceList.h
-/cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
-DataElement.h
-/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/LinkList.c
+LinkList.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/LinkList.h
+
+/cygdrive/d/Studies/C/DataStructure/Chapter2/LinkList.h
 stdio.h
 -
 stdlib.h
 -
+DataElement.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
 
 /cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
 stdio.h
@@ -31,8 +33,12 @@ stdio.h
 -
 stdlib.h
 -
+string.h
+-
 DataElement.h
 /cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h
 SequenceList.h
 /cygdrive/d/Studies/C/DataStructure/Chapter2/SequenceList.h
+LinkList.h
+/cygdrive/d/Studies/C/DataStructure/Chapter2/LinkList.h
 

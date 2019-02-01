@@ -123,6 +123,33 @@ Chapter2_0/fast:
 	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/build
 .PHONY : Chapter2_0/fast
 
+LinkList.o: LinkList.c.o
+
+.PHONY : LinkList.o
+
+# target to build an object file
+LinkList.c.o:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/LinkList.c.o
+.PHONY : LinkList.c.o
+
+LinkList.i: LinkList.c.i
+
+.PHONY : LinkList.i
+
+# target to preprocess a source file
+LinkList.c.i:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/LinkList.c.i
+.PHONY : LinkList.c.i
+
+LinkList.s: LinkList.c.s
+
+.PHONY : LinkList.s
+
+# target to generate assembly for a file
+LinkList.c.s:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/LinkList.c.s
+.PHONY : LinkList.c.s
+
 SequenceList.o: SequenceList.c.o
 
 .PHONY : SequenceList.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Chapter2_0"
 	@echo "... edit_cache"
+	@echo "... LinkList.o"
+	@echo "... LinkList.i"
+	@echo "... LinkList.s"
 	@echo "... SequenceList.o"
 	@echo "... SequenceList.i"
 	@echo "... SequenceList.s"
