@@ -40,6 +40,12 @@ void InitLinkList(LinkList *linkList, ElementType *dataArray, int length);
 /** 在指定位置pos处插入元素element */
 void InsertLinkList(LinkList *linkList, int pos, ElementType element);
 
+/** 删除指定位置的元素并返回该元素的数据 */
+ElementType DeleteLinkListElement(LinkList *linkList, int pos);
+
+/** 清空链表 */
+void ClearLinkList(LinkList *linkList);
+
 /** 查询指定位置(pos)的元素 */
 ElementType GetLinkListElement(LinkList * linkList, int pos);
 

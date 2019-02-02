@@ -38,6 +38,50 @@ void InsertLinkList(LinkList *linkList, int pos, ElementType element) {
     }
 }
 
+/** 删除指定位置的元素并返回该元素的数据 */
+ElementType DeleteLinkListElement(LinkList *linkList, int pos) {
+    ElementType element;//要删除的元素
+    element.id = -9999;//赋一个不可能的值用来判断是否删除成功
+    Node *node = NULL;
+    //要删除的位置为1的情况
+    if(pos == 1) {
+        node = linkList->next;
+        if(node) {
+            element = node->data;
+            linkList->next = node->next;
+            free(node);//释放被删除结点的内存!
+            linkList->length--;
+        }
+        return element;
+    }
+    //要删除的位置不是1的情况,需要找到要删除结点以及其前缀结点!
+    //主要操作为将前缀(pre)结点->next指向要删除结点->next,即完成删除
+    Node *preNode;//定义一个前缀结点
+    node = linkList->next;
+    for(int i = 1; node && i < pos; i++) {
+        preNode = node;
+        node = node->next;
+    }
+    if(node) {
+        element = node->data;
+        preNode->next = node->next;
+        free(node);
+        linkList->length--;
+    }
+    return element;
+}
+
+/** 清空链表 */
+void ClearLinkList(LinkList *linkList) {
+    Node *node = linkList->next;
+    Node *nextNode;
+    while(node) {
+        nextNode = node->next;
+        free(node);
+        node = nextNode;
+    }
+}
+
 /** 查询指定位置(pos)的元素 */
 ElementType GetLinkListElement(LinkList * linkList, int pos) {
      Node *node = linkList->next;

@@ -58,4 +58,12 @@ void TestLinkList() {
     InsertLinkList(&linkList, 3, newElement);
     printf("链表插入元素后\n");
     PrintLinkList(&linkList);
+    //测试链表删除
+    printf("删除链表第三个元素后\n");
+    DeleteLinkListElement(&linkList, 3);
+    PrintLinkList(&linkList);
+    //测试清空链表
+    printf("清空链表后\n");
+    ClearLinkList(&linkList);
+    PrintLinkList(&linkList);
 }
