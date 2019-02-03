@@ -1,1 +1,1 @@
-/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Chapter2_0.dir/main.c.o CMakeFiles/Chapter2_0.dir/SequenceList.c.o CMakeFiles/Chapter2_0.dir/LinkList.c.o  -o Chapter2_0.exe -Wl,--out-implib,libChapter2_0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Chapter2_0.dir/main.c.o CMakeFiles/Chapter2_0.dir/SequenceList.c.o CMakeFiles/Chapter2_0.dir/LinkList.c.o CMakeFiles/Chapter2_0.dir/CircularLinkList.c.o  -o Chapter2_0.exe -Wl,--out-implib,libChapter2_0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

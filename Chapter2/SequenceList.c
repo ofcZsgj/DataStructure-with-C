@@ -85,7 +85,7 @@ ElementType *DeleteElement(SeqList *seqList, int index) {
     }
     //3.顺序表总长度-1
     seqList->length--;
-    return delElement;//建议使用完毕后进行free,否则会造成内容泄露
+    return delElement;//建议使用完毕后进行free,否则会造成内存泄露
 }
 
 /**

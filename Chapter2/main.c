@@ -4,6 +4,7 @@
 #include"DataElement.h"
 #include "SequenceList.h"
 #include "LinkList.h"
+#include "CircularLinkList.h"
 
 //测试数据
 ElementType dataArray[] = {
@@ -17,9 +18,12 @@ void TestSequenceList();//测试顺序表
 
 void TestLinkList();//测试链表
 
+void TestCircularLinkList();//测试循环链表
+
 int main() {
     TestSequenceList();
     TestLinkList();
+    TestCircularLinkList();
     return 0;
 }
 
@@ -50,6 +54,7 @@ void TestLinkList() {
     linkList.length = 0;//容易忽略
     InitLinkList(&linkList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));
     PrintLinkList(&linkList);
+
     //测试链表插入
     ElementType newElement;
     newElement.id = 117;
@@ -59,11 +64,30 @@ void TestLinkList() {
     printf("链表插入元素后\n");
     PrintLinkList(&linkList);
     //测试链表删除
+
     printf("删除链表第三个元素后\n");
     DeleteLinkListElement(&linkList, 3);
     PrintLinkList(&linkList);
     //测试清空链表
+
     printf("清空链表后\n");
     ClearLinkList(&linkList);
     PrintLinkList(&linkList);
+}
+
+void TestCircularLinkList() {
+    //测试循环链表初始化
+    CircularLinkList *clList = (CircularLinkList *)malloc(sizeof(CircularLinkList));
+    clList->length = 0;
+    clList->next = NULL;
+    InitCircularLinkList(clList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));
+    printf("循环链表初始化后\n");
+    PrintCircularLinkList(clList);
+
+    //测试循环链表插入
+    InsertCircularLinkList(clList, 1, dataArray[1]);
+    printf("循环链表插入后\n");
+    PrintCircularLinkList(clList);
+
+    //测试循环链表删除
 }

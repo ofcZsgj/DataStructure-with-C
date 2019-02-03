@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/Studies/C/DataStructure/Chapter2/CircularLinkList.c">
+			<Option target="Chapter2_0"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Studies/C/DataStructure/Chapter2/CircularLinkList.h">
+			<Option target="Chapter2_0"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Studies/C/DataStructure/Chapter2/DataElement.h">
 			<Option target="Chapter2_0"/>
 		</Unit>

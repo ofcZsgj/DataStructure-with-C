@@ -123,6 +123,33 @@ Chapter2_0/fast:
 	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/build
 .PHONY : Chapter2_0/fast
 
+CircularLinkList.o: CircularLinkList.c.o
+
+.PHONY : CircularLinkList.o
+
+# target to build an object file
+CircularLinkList.c.o:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/CircularLinkList.c.o
+.PHONY : CircularLinkList.c.o
+
+CircularLinkList.i: CircularLinkList.c.i
+
+.PHONY : CircularLinkList.i
+
+# target to preprocess a source file
+CircularLinkList.c.i:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/CircularLinkList.c.i
+.PHONY : CircularLinkList.c.i
+
+CircularLinkList.s: CircularLinkList.c.s
+
+.PHONY : CircularLinkList.s
+
+# target to generate assembly for a file
+CircularLinkList.c.s:
+	$(MAKE) -f CMakeFiles/Chapter2_0.dir/build.make CMakeFiles/Chapter2_0.dir/CircularLinkList.c.s
+.PHONY : CircularLinkList.c.s
+
 LinkList.o: LinkList.c.o
 
 .PHONY : LinkList.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Chapter2_0"
 	@echo "... edit_cache"
+	@echo "... CircularLinkList.o"
+	@echo "... CircularLinkList.i"
+	@echo "... CircularLinkList.s"
 	@echo "... LinkList.o"
 	@echo "... LinkList.i"
 	@echo "... LinkList.s"
