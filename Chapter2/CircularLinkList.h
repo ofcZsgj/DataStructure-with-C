@@ -37,6 +37,12 @@ void InsertCircularLinkList(CircularLinkList *clList, int pos, ElementType eleme
 /** 删除并返回指定位置的元素 */
 ElementType DeleteCircularLinkList(CircularLinkList *clList, int pos);
 
+/** 根据给定的元素内容返回对应的结点指针 */
+CircularNode *GetCircularLinkListNode(CircularLinkList *clList, ElementType element);
+
+/** 通过给定的某个结点循环遍历出链表中的每个元素 */
+void PrintCircularLinkListByNode(CircularLinkList *clList, CircularNode *node);
+
 void PrintCircularLinkList(CircularLinkList *clList);
 
 #endif //CHAPTER2_0_CIRCULARLINKLIST_H

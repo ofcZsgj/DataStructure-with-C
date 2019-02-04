@@ -47,7 +47,7 @@ ElementType DeleteLinkListElement(LinkList *linkList, int pos);
 void ClearLinkList(LinkList *linkList);
 
 /** 查询指定位置(pos)的元素 */
-ElementType GetLinkListElement(LinkList * linkList, int pos);
+ElementType GetLinkListElement(LinkList *linkList, int pos);
 
 int IsLinkListEmpty(LinkList *linkList);
 

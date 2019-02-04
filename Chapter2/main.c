@@ -76,7 +76,7 @@ void TestLinkList() {
 
 void TestCircularLinkList() {
     //测试循环链表初始化
-    CircularLinkList *clList = (CircularLinkList *)malloc(sizeof(CircularLinkList));
+    CircularLinkList *clList = (CircularLinkList *) malloc(sizeof(CircularLinkList));
     clList->length = 0;
     clList->next = NULL;
     InitCircularLinkList(clList, dataArray, sizeof(dataArray) / sizeof(dataArray[0]));
@@ -90,8 +90,16 @@ void TestCircularLinkList() {
 
     //测试循环链表删除
     ElementType delElement = DeleteCircularLinkList(clList, 3);
-    printf("删除链表的元素为: %d\t%s\n",delElement.id,delElement.name);
+    printf("删除链表的元素为: %d\t%s\n", delElement.id, delElement.name);
     PrintCircularLinkList(clList);
     printf("删除后的循环链表为\n");
     PrintCircularLinkList(clList);
+
+    //测试循环链表的遍历
+    ElementType elem;
+    elem.id = 1;
+    elem.name = "Nayuta";
+    CircularNode *node = GetCircularLinkListNode(clList,elem);
+    printf("在给定循环链表指定元素: %s 开始遍历打印为\n",elem.name);
+    PrintCircularLinkListByNode(clList,node);
 }
