@@ -34,6 +34,9 @@ void InitCircularLinkList(CircularLinkList *clList, ElementType *dataArray, int 
 /** 在循环链表的指定位置插入元素 */
 void InsertCircularLinkList(CircularLinkList *clList, int pos, ElementType element);
 
+/** 删除并返回指定位置的元素 */
+ElementType DeleteCircularLinkList(CircularLinkList *clList, int pos);
+
 void PrintCircularLinkList(CircularLinkList *clList);
 
 #endif //CHAPTER2_0_CIRCULARLINKLIST_H

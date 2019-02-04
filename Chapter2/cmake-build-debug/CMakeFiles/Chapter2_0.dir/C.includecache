@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Studies/C/DataStructure/Chapter2/CircularLinkList.c
-CircularLinkList.h
-/cygdrive/d/Studies/C/DataStructure/Chapter2/CircularLinkList.h
-
 /cygdrive/d/Studies/C/DataStructure/Chapter2/CircularLinkList.h
 stdlib.h
 -

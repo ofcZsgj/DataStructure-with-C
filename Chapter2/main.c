@@ -21,8 +21,8 @@ void TestLinkList();//测试链表
 void TestCircularLinkList();//测试循环链表
 
 int main() {
-    TestSequenceList();
-    TestLinkList();
+    //TestSequenceList();
+    //TestLinkList();
     TestCircularLinkList();
     return 0;
 }
@@ -43,8 +43,7 @@ void TestSequenceList() {
     delElement = DeleteElement(&seqList, 1);
     printf("顺序表删除后\n");
     PrintList(&seqList);
-    printf("顺序表删除的元素为\n");
-    printf("%d\t%s\n", delElement->id, delElement->name);
+    printf("顺序表删除的元素为\n%d\t%s\n", delElement->id, delElement->name);
     free(delElement);//使用完毕记得释放内存(专业做法!)
 }
 
@@ -90,4 +89,9 @@ void TestCircularLinkList() {
     PrintCircularLinkList(clList);
 
     //测试循环链表删除
+    ElementType delElement = DeleteCircularLinkList(clList, 3);
+    printf("删除链表的元素为: %d\t%s\n",delElement.id,delElement.name);
+    PrintCircularLinkList(clList);
+    printf("删除后的循环链表为\n");
+    PrintCircularLinkList(clList);
 }

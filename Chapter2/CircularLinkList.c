@@ -50,6 +50,43 @@ void InsertCircularLinkList(CircularLinkList *clList, int pos, ElementType eleme
     }
 }
 
+/** 删除并返回指定位置的元素 */
+ElementType DeleteCircularLinkList(CircularLinkList *clList, int pos) {
+    ElementType element;
+    element.id = 9999;//赋一个不可能的值用来判断删除是否成功
+    //如果删除的位置是1
+    if(pos == 1) {
+        CircularNode *node = clList->next;
+        if(node) {
+            CircularNode *lastNode = clList->next;
+            element = node->data;
+            //找到最后一个结点并改变其指针域的指向
+            for(int i = 1; i < clList->length; i++) {
+                lastNode = lastNode->next;
+            }
+            clList->next = node->next;
+            lastNode->next = clList->next;
+            free(node);
+            clList->length--;
+        }
+        return element;
+    }
+    //如果删除的位置不为1
+    CircularNode *preNode;//定义一个前缀结点
+    CircularNode *node = clList->next;
+    for(int i = 1; node && i < pos;i++) {
+        preNode = node;
+        node = node->next;
+    }
+    if(node) {
+        element = node->data;
+        preNode->next = node->next;
+        free(node);
+        clList->length--;
+    }
+    return element;
+}
+
 void PrintCircularLinkList(CircularLinkList *clList) {
     CircularNode *node = clList->next;
     if(!node->next || clList->length == 0) {
